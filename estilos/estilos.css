@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 1 solid black;
+  
+    }
+    
+    header { grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid black; 
+    background-color: black;
+border: solid 2px red;}
+    
+    
+    .Inicio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 60vh;
+       
+        }
+        
+        .logo { grid-area: 2 / 2 / 2 / 4; 
+
+                 height:23vh;
+        
+    }
+        .titulo{ grid-area: 3 / 1 / 3 / 4; 
+         font-size: 8px;
+         text-transform:capitalize;
+         text-align: center;
+         align-self: center;
+         color: aliceblue;
+
+
+    }
+        .nav{ grid-area: 3 / 1 / 4 / 4; }
+
+    #portada { grid-area: 2 / 1 / 3 / 2;
+    border: 1px solid black;
+    height: 60vh;
+    }
+    main{
+        border: 2px solid red;
+    }
+    .box-inicio { grid-area: 3 / 1 / 4 / 2; 
+    border: solid 1px black;}
+    footer { grid-area: 4 / 1 / 5 / 2; 
+    border: solid 1px black;}
+
+
+    .inicio-img{
+        width: 80vw;
+    }
