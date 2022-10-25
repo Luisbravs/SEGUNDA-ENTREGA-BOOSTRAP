@@ -10,14 +10,14 @@ body {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border: 1 solid black;
+    
   
     }
     
     header { grid-area: 1 / 1 / 2 / 2;
     border: 1px solid black; 
     background-color: black;
-border: solid 2px red;}
+    }
     
     
     .Inicio {
@@ -47,10 +47,15 @@ border: solid 2px red;}
         .nav{ grid-area: 3 / 1 / 4 / 4; }
 
     #portada { grid-area: 2 / 1 / 3 / 2;
-    border: 1px solid black;}
-    main{
-        border: 2px solid red;
+    border: 1px solid black;
+    height: 30vh;}
+    .img-porta{
+        height:30vh;
+        width: 100%;
+        background-position: cover;
     }
+    
+    
   
     .box-contenido{
             display: grid;
@@ -60,7 +65,7 @@ border: solid 2px red;}
             grid-row-gap: 0px;
             }
             
-            .box-contenido-titulo{ grid-area: 1 / 1 / 2 / 6; 
+            .box-contenido-titulo{ grid-area: 1 / 1 /. / 6; 
                 
             align-self: center;
             text-align: center;
@@ -79,24 +84,187 @@ border: solid 2px red;}
                 height: 15vh;
                 
             }
-            .box-inicio-promo { grid-area: 3 / 1 / 4 / 2; 
-            align-self: center;
-            
-            }
+           
+            /* From uiverse.io by @DGtalsam */
+.btn-contactanos{
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+           7px 7px 20px 0px rgba(0, 0, 0, .1),
+           4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+   
+   }
+   button{
+   justify-content: center;
+   }
+   
+   .btn {
+    background:linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height:42px;
+    padding:0;
+    border: none;
+   
+   }
+   
+   .btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+   }
+   
+   .btn:before,
+   .btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+           -4px -4px 5px 0px rgba(255, 255, 255, .9),
+           7px 7px 20px 0px rgba(0, 0, 0, .2),
+           4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+   }
+   
+   .btn:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn:after {
+    width: 0%;
+    height: 2px;
+   }
+   
+   .btn:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent;
+   }
+   
+   .btn:hover:before {
+    height: 100%;
+   }
+   
+   .btn:hover:after {
+    width: 100%;
+   }
+   
+   .btn span:before,
+   .btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+           -4px -4px 5px 0px rgba(255, 255, 255, .9),
+           7px 7px 20px 0px rgba(0, 0, 0, .2),
+           4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+   }
+   
+   .btn span:before {
+    width: 2px;
+    height: 0%;
+   }
+   
+   .btn span:after {
+    height: 2px;
+    width: 0%;
+   }
+   
+   .btn span:hover:before {
+    height: 100%;
+   }
+   
+   .btn span:hover:after {
+    width: 100%;
+   }
             .promo-contactanos{
                 font-size: 10px;
+                justify-content: center;
+                
             
             }
             a.promo-contactanos{
-                text-align: center;
+                text-decoration: none;
+                color: black;
+                
+               
             }
    
 
 
 
 
-    footer { grid-area: 4 / 1 / 5 / 2; 
-    border: solid 1px black;}
+    footer {
+         grid-area: 4 / 1 / 5 / 2; 
+         border: solid 1px black;
+         background: rgb(101,94,94);
+         background: radial-gradient(circle, rgba(101,94,94,1) 0%, rgba(63,64,58,1) 46%, rgba(54,59,59,1) 100%);
+    }
+         
+    .footer-conten{
+        display: grid;
+        height: 3rem;
+    }
+
+    .titulo-seccion{
+        padding:10px ;
+        margin-top: 10px;
+        text-align: center;
+        align-self: center;
+        font-size: 15px;
+        justify-items: baseline;
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    .redes{
+        margin-top: 10px;
+        text-align: center;  
+        color: aliceblue;   
+    }
+    .red{
+        margin-right: 13px;
+        font-size:20px;
+    }
+    .copy{
+        display: flex;
+        flex-direction:row;
+       justify-content: center;
+       align-items: flex-end;
+       background-color: rgba(36, 30, 30, 0.144);
+       margin-top:10px;
+
+       
+    }
+    .p-copy{ 
+       
+        font-size: 8px;
+        text-decoration: dashed;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        color:aliceblue;
+       
+       
+       
+       
+        
+    }
+    
+    
+    
 
 
 
